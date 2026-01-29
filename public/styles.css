@@ -5,85 +5,105 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-  max-width: 500px;
-  margin: auto;
+  width: 100%;
+  max-width: 520px;
   background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 15px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333;
 }
 
 input,
 button {
   width: 100%;
-  padding: 10px;
-  margin-top: 8px;
-  font-size: 14px;
+  padding: 14px;
+  margin-top: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+input {
+  border: 1px solid #cccccc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
 }
 
 button {
   cursor: pointer;
-  background-color: #007bff;
+  background: linear-gradient(135deg, #007bff, #0056b3);
   color: #ffffff;
   border: none;
-  border-radius: 4px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 button:hover {
-  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 123, 255, 0.35);
 }
 
 ul {
   list-style: none;
-  margin-top: 15px;
+  margin-top: 22px;
 }
 
 li {
-  background-color: #eeeeee;
-  padding: 10px;
-  margin-bottom: 8px;
-  border-radius: 4px;
+  background-color: #f8f9fa;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .actions button {
   width: auto;
-  padding: 5px 8px;
-  margin-left: 5px;
-  font-size: 12px;
+  padding: 8px 12px;
+  margin-left: 8px;
+  font-size: 14px;
+  border-radius: 6px;
 }
 
 .actions button:first-child {
-  background-color: #28a745;
+  background: linear-gradient(135deg, #28a745, #1e7e34);
 }
 
 .actions button:last-child {
-  background-color: #dc3545;
+  background: linear-gradient(135deg, #dc3545, #bd2130);
 }
 
-.actions button:first-child:hover {
-  background-color: #1e7e34;
-}
-
+.actions button:first-child:hover,
 .actions button:last-child:hover {
-  background-color: #bd2130;
+  transform: scale(1.05);
 }
 
 .error {
   color: #dc3545;
-  font-size: 13px;
-  margin-top: 5px;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
 }
